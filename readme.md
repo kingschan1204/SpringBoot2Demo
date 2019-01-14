@@ -4,6 +4,7 @@
 - /el : el表达式相关
 - /swagger : 集成swagger
 - /web : 集成servlet filter listener
+- /validation : 控制器效验
 
 ## Spring Boot 更换 Banner
 只需要在src/main/resources路径下新建一个banner.txt文件，banner.txt中填写好需要打印的字符串内容即可。
