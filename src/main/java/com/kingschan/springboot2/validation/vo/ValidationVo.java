@@ -28,17 +28,17 @@ public class ValidationVo {
     @ApiModelProperty(value = "年纪")
     private Integer age;
 
-    @Email
-    @NotNull
+    @Email(message = "邮箱格式不正确")
+    @NotNull(message = "邮箱不能为空！")
     @ApiModelProperty(value = "邮箱")
     private String email;
 
-    @Past(message = "日期格式不正确")
-    @NotNull
+    //@Past(message = "日期格式不正确")
+    @NotNull(message = "加入时间不能为空")
     @ApiModelProperty(value = "加入日期")
     private String joinDate;
 
-    @NotNull
+    @NotNull(message = "性别不到为空")
     @ApiModelProperty(value = "性别")
     private Boolean sex;
 }
